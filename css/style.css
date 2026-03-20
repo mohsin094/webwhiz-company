@@ -9517,6 +9517,36 @@ h6,
   }
 }
 
+/* Mobile navbar fixes (toggler + expanded collapse) */
+@media (max-width: 991.98px) {
+  /* Prevent logo from pushing toggler off-screen */
+  .nav-bar .navbar-brand h1.display-4 {
+    font-size: 1.65rem !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Make the expanded menu align nicely and scroll if tall */
+  .navbar-collapse {
+    align-items: flex-start;
+  }
+
+  .navbar-collapse.show {
+    background: rgba(7, 10, 18, 0.98);
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 10px 16px 16px 16px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  /* Keep menu usable on short mobile viewports */
+  .navbar-collapse.show {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+}
+
 .carousel-caption {
   top: 0;
   left: 0;
@@ -9632,6 +9662,32 @@ h6,
   border: 12px solid;
   border-color: #dee2e6 transparent transparent transparent;
   z-index: 1;
+}
+
+/* Image-only testimonial slides (use client screenshots/images) */
+.wwt-testimonial-img::before,
+.wwt-testimonial-img::after {
+  display: none;
+}
+
+/* Round corners for image-only testimonials */
+.wwt-testimonial-img {
+  border-radius: var(--wwt-radius);
+  overflow: hidden;
+}
+
+.wwt-testimonial-img > img {
+  border-radius: inherit !important;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  filter: none !important;
+}
+
+/* Ensure Fiverr icon image stays round in the circular footer button */
+.bg-secondary .rounded-circle > img {
+  border-radius: 9999px;
 }
 
 .team-carousel .owl-dots,

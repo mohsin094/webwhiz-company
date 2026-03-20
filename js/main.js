@@ -80,7 +80,7 @@
                 items:1
             },
             768:{
-                items:2
+                items:1
             }
         }
     });
@@ -144,6 +144,8 @@
             tiltTargets.forEach(function (el) {
                 // avoid tilting very large wrappers
                 if (el.classList.contains('container') || el.classList.contains('container-fluid')) return;
+                // Prevent blur artifacts on testimonial carousel hover
+                if (el.closest && el.closest('.testimonial-carousel')) return;
                 el.classList.add('wwt-tilt');
 
                 el.addEventListener('pointermove', function (e) {
