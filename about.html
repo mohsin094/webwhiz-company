@@ -2,18 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Web Whiz</title>
+    <title>About | WebWhizTech</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Web Whiz" name="keywords" />
-    <meta content="Web Whiz" name="description" />
+    <meta content="web development, mobile app development, UI/UX, eCommerce, custom software, WebWhizTech" name="keywords" />
+    <meta content="Meet WebWhizTech — a web and mobile development team focused on fast delivery, quality engineering, and modern design." name="description" />
+    <meta name="theme-color" content="#070a12" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="WebWhizTech" />
+
+    <link rel="canonical" href="https://webwhiztech.com/about.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="WebWhizTech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About | WebWhizTech" />
+    <meta property="og:description" content="Meet WebWhizTech — a web and mobile development team focused on fast delivery, quality engineering, and modern design." />
+    <meta property="og:url" content="https://webwhiztech.com/about.html" />
+    <meta property="og:image" content="https://webwhiztech.com/img/logo.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="About | WebWhizTech" />
+    <meta name="twitter:description" content="Meet WebWhizTech — a web and mobile development team focused on fast delivery, quality engineering, and modern design." />
+    <meta name="twitter:image" content="https://webwhiztech.com/img/logo.png" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://webwhiztech.com/#organization",
+            "name": "WebWhizTech",
+            "url": "https://webwhiztech.com/",
+            "logo": "https://webwhiztech.com/img/logo.png",
+            "email": "info@webwhiztech.com",
+            "telephone": "+923052030673",
+            "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://webwhiztech.com/#website",
+            "url": "https://webwhiztech.com/",
+            "name": "WebWhizTech",
+            "publisher": { "@id": "https://webwhiztech.com/#organization" }
+          },
+          {
+            "@type": "AboutPage",
+            "@id": "https://webwhiztech.com/about.html#webpage",
+            "url": "https://webwhiztech.com/about.html",
+            "name": "About | WebWhizTech",
+            "isPartOf": { "@id": "https://webwhiztech.com/#website" },
+            "about": { "@id": "https://webwhiztech.com/#organization" }
+          }
+        ]
+      }
+    </script>
 
     <!-- Favicon -->
     <link href="img/logo.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -35,11 +89,9 @@
     <div class="container-fluid nav-bar p-0">
       <div class="container-lg p-0">
         <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-          <a href="index.html" class="navbar-brand">
+          <a href="index.html" class="navbar-brand" data-animate="fade-right">
             <h1 class="m-0 text-white display-4">
-              <span class="text-primary">W</span>eb<span class="text-primary"></span>
-                W</span
-              >hiz
+              <span class="text-primary">W</span>eb<span class="text-primary">W</span>hiz<span class="text-primary">T</span>ech
             </h1>
           </a>
           <button
@@ -59,6 +111,7 @@
               <a href="about.html" class="nav-item nav-link active">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
               <a href="pricing.html" class="nav-item nav-link">Pricing</a>
+              <a href="potfolio.html" class="nav-item nav-link">Portfolio</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
           </div>
@@ -70,6 +123,7 @@
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5"
+      data-animate="zoom"
     >
       <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">About</h1>
       <div class="d-inline-flex text-white">
@@ -84,10 +138,10 @@
     <div class="container-fluid py-5">
       <div class="container">
         <div class="row align-items-center pb-1">
-          <div class="col-lg-5">
-            <img class="img-thumbnail p-3" src="img/about.jpg" alt="" />
+          <div class="col-lg-5" data-animate="fade-right">
+            <img class="img-thumbnail p-3" src="img/f.webp" alt="About WebWhizTech" />
           </div>
-          <div class="col-lg-7 mt-5 mt-lg-0">
+          <div class="col-lg-7 mt-5 mt-lg-0" data-animate="fade-left">
             <small
               class="bg-primary text-white text-uppercase font-weight-bold px-1"
               >Who We Are</small
@@ -96,7 +150,7 @@
                 Software Development Company
             </h1>
             <p class="mb-4">
-                Web Whiz is a leading software development company dedicated to empowering businesses with innovative web solutions. We specialize in creating cutting-edge websites, intuitive mobile applications, robust e-commerce platforms, and customized software solutions. With a focus on seamless user experiences and optimized performance, we collaborate closely with our clients to understand their goals and deliver tailor-made solutions. Our agile development process ensures flexibility and timely project delivery. 
+                WebWhizTech is a software development company dedicated to empowering businesses with modern web and mobile solutions. We build high-performing websites, intuitive mobile applications, robust e-commerce experiences, and custom software—always focused on seamless UX, scalability, and measurable results.
 
             </p>
             <!-- <a
@@ -107,7 +161,7 @@
           </div> -->
         </div>
         <div class="row mt-4">
-          <div class="col-md-4">
+          <div class="col-md-4" data-animate="fade-up">
             <div
               class="d-flex align-items-center border mb-4 mb-lg-0 p-4"
               style="height: 120px"
@@ -119,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-animate="fade-up">
             <div
               class="d-flex align-items-center border mb-4 mb-lg-0 p-4"
               style="height: 120px"
@@ -127,11 +181,13 @@
               <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
               <div class="d-flex flex-column">
                 <h5 class="font-weight-bold">Email Us</h5>
-                <p class="m-0">mohsinkhanzda@gmail.com</p>
+                <p class="m-0">
+                  <a class="text-white" href="mailto:info@webwhiztech.com">info@webwhiztech.com</a>
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-animate="fade-up">
             <div
               class="d-flex align-items-center border mb-4 mb-lg-0 p-4"
               style="height: 120px"
@@ -139,7 +195,9 @@
               <i class="fas fa-2x fa-phone-alt text-primary mr-3"></i>
               <div class="d-flex flex-column">
                 <h5 class="font-weight-bold">Call Us</h5>
-                <p class="m-0">+92 3052030673</p>
+                <p class="m-0">
+                  <a class="text-white" href="https://wa.me/923052030673" target="_blank" rel="noopener">+92 3052030673</a>
+                </p>
               </div>
             </div>
           </div>
@@ -152,14 +210,14 @@
     <div class="container-fluid pt-5 pb-2">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 mb-5">
+            <div class="col-lg-6 mb-5" data-animate="fade-right">
               <small
                 class="bg-primary text-white text-uppercase font-weight-bold px-1"
                 >Why Choose Us</small
               >
-              <h1 class="mt-2 mb-3">5 Years Experience</h1>
+              <h1 class="mt-2 mb-3">Built on experience</h1>
               <h4 class="font-weight-normal text-muted mb-4">
-                  With five years of experience, we have perfected our craft, delivering innovative and tailored solutions that drive measurable results.
+                  A proven process, clean engineering, and modern design—shipped on time. We plan carefully, communicate clearly, and deliver work you can maintain and scale.
               </h4>
               
               <!-- <a
@@ -168,7 +226,7 @@
                 >Learn More</a
               > -->
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-animate="fade-left">
               <div class="row">
                 <div class="col-sm-6 pb-1">
                   <div
@@ -233,14 +291,14 @@
    <div class="container-fluid pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 mb-5">
+        <div class="col-lg-4 mb-5" data-animate="fade-right">
           <small
             class="bg-primary text-white text-uppercase font-weight-bold px-1"
             >Meet The Team</small
           >
-          <h1 class="mt-2 mb-3">Meet Experts Behind the Work</h1>
+          <h1 class="mt-2 mb-3">Meet the team</h1>
           <h4 class="font-weight-normal text-muted mb-4">
-             Meet our team of experienced professionals who bring their expertise and passion to every project.
+             Designers, developers, and QA working as one delivery team. You get a single accountable partner—from discovery to launch and ongoing improvements.
           </h4>
           <!-- <a
             href=""
@@ -248,7 +306,7 @@
             >Meet All Experts</a
           > -->
         </div>
-        <div class="col-lg-8 mb-5">
+        <div class="col-lg-8 mb-5" data-animate="fade-left">
           <div class="owl-carousel team-carousel">
             <div class="team-item">
               <div class="position-relative">
@@ -256,16 +314,7 @@
                 <div
                   class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3"
                 >
-                  <div
-                    class="d-flex align-items-center justify-content-start"
-                  >
-                                          <a
-                      class="btn btn-outline-secondary rounded-circle text-center px-0"
-                      style="width: 38px; height: 38px"
-                      href="https://www.linkedin.com/in/muhammad-mohsin-khan-a4a529177/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
+                  <div class="d-flex align-items-center justify-content-start"></div>
                 </div>
               </div>
               <div
@@ -283,16 +332,7 @@
                 <div
                   class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3"
                 >
-                  <div
-                    class="d-flex align-items-center justify-content-start"
-                  >
-                    <a
-                      class="btn btn-outline-secondary rounded-circle text-center px-0"
-                      style="width: 38px; height: 38px"
-                      href="https://www.linkedin.com/in/tayyabaimam/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
+                  <div class="d-flex align-items-center justify-content-start"></div>
                 </div>
               </div>
               <div
@@ -310,16 +350,7 @@
                 <div
                   class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3"
                 >
-                  <div
-                    class="d-flex align-items-center justify-content-start"
-                  >
-                               <a
-                      class="btn btn-outline-secondary rounded-circle text-center px-0"
-                      style="width: 38px; height: 38px"
-                      href="https://www.linkedin.com/in/saqibabdullah55/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
+                  <div class="d-flex align-items-center justify-content-start"></div>
                 </div>
               </div>
               <div
@@ -337,17 +368,7 @@
                 <div
                   class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3"
                 >
-                  <div
-                    class="d-flex align-items-center justify-content-start"
-                  >
-                    
-                    <a
-                      class="btn btn-outline-secondary rounded-circle text-center px-0"
-                      style="width: 38px; height: 38px"
-                      href="https://www.linkedin.com/in/m-danish-munir-1638ba23b/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
+                  <div class="d-flex align-items-center justify-content-start"></div>
                 </div>
               </div>
               <div
@@ -365,17 +386,7 @@
                 <div
                   class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3"
                 >
-                  <div
-                    class="d-flex align-items-center justify-content-start"
-                  >
-                    
-                    <a
-                      class="btn btn-outline-secondary rounded-circle text-center px-0"
-                      style="width: 38px; height: 38px"
-                      href="https://www.linkedin.com/in/umair-hayee-640aba1b1/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
+                  <div class="d-flex align-items-center justify-content-start"></div>
                 </div>
               </div>
               <div
@@ -393,17 +404,7 @@
                 <div
                   class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3"
                 >
-                  <div
-                    class="d-flex align-items-center justify-content-start"
-                  >
-                    
-                    <a
-                      class="btn btn-outline-secondary rounded-circle text-center px-0"
-                      style="width: 38px; height: 38px"
-                      href="https://www.linkedin.com/in/muhammad-umair-499073222/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
+                  <div class="d-flex align-items-center justify-content-start"></div>
                 </div>
               </div>
               <div
@@ -421,17 +422,7 @@
                 <div
                   class="team-overlay position-absolute d-flex align-items-center justify-content-center m-3"
                 >
-                  <div
-                    class="d-flex align-items-center justify-content-start"
-                  >
-                    
-                    <a
-                      class="btn btn-outline-secondary rounded-circle text-center px-0"
-                      style="width: 38px; height: 38px"
-                      href="https://www.linkedin.com/in/web3-blockchain-developer/"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                  </div>
+                  <div class="d-flex align-items-center justify-content-start"></div>
                 </div>
               </div>
               <div
@@ -458,13 +449,11 @@
         <div class="col-lg-3 col-md-6 mb-5">
           <a href="index.html" class="navbar-brand">
             <h1 class="m-0 mt-n2 text-white display-4">
-              <span class="text-primary">W</span>eb<span class="text-primary"
-                > W</span
-              >hiz
+              <span class="text-primary">W</span>eb<span class="text-primary">W</span>hiz<span class="text-primary">T</span>ech
             </h1>
           </a>
           <p>
-            Trust Web Whiz to transform your ideas into digital success.
+            Trust WebWhizTech to transform your ideas into digital success.
           </p>
           <div class="d-flex justify-content-start mt-4">
                     <a
@@ -517,23 +506,25 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
-          <h5 class="font-weight-bold text-primary mb-4">Get In Touch</h5>
-          <p>
-            Just a click away!
-          </p>
+          <h5 class="font-weight-bold text-primary mb-4">Let’s talk</h5>
+          <p>Tell us what you’re building—we’ll reply within 24 hours.</p>
           <p>
             <i class="fa fa-map-marker-alt text-primary mr-2"></i>Lahore, Pakistan
           </p>
-          <p><i class="fa fa-phone-alt text-primary mr-2"></i>+92 3052030673</p>
           <p>
-            <i class="fa fa-envelope text-primary mr-2"></i>webwhiz094@gmail.com
+            <i class="fa fa-phone-alt text-primary mr-2"></i
+            ><a class="text-white" href="https://wa.me/923052030673" target="_blank" rel="noopener">+92 3052030673</a>
+          </p>
+          <p>
+            <i class="fa fa-envelope text-primary mr-2"></i
+            ><a class="text-white" href="mailto:info@webwhiztech.com">info@webwhiztech.com</a>
           </p>
         </div>
       </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5">
       <p class="m-0 text-center">
-        &copy; <a class="font-weight-semi-bold" href="#">Web Whiz</a>. All
+        &copy; <a class="font-weight-semi-bold" href="https://webwhiztech.com">WebWhizTech</a>. All
         Rights Reserved.
       </p>
     </div>

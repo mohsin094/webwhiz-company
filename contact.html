@@ -2,18 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Web Whiz</title>
+    <title>Contact | WebWhizTech</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Free HTML Templates" name="keywords" />
-    <meta content="Free HTML Templates" name="description" />
+    <meta content="web development, mobile app development, UI/UX, eCommerce, custom software, WebWhizTech" name="keywords" />
+    <meta content="Contact WebWhizTech for web and mobile development projects. Let’s discuss your goals and timeline." name="description" />
+    <meta name="theme-color" content="#070a12" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="WebWhizTech" />
+
+    <link rel="canonical" href="https://webwhiztech.com/contact.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="WebWhizTech" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact | WebWhizTech" />
+    <meta property="og:description" content="Contact WebWhizTech for web and mobile development projects. Let’s discuss your goals and timeline." />
+    <meta property="og:url" content="https://webwhiztech.com/contact.html" />
+    <meta property="og:image" content="https://webwhiztech.com/img/logo.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Contact | WebWhizTech" />
+    <meta name="twitter:description" content="Contact WebWhizTech for web and mobile development projects. Let’s discuss your goals and timeline." />
+    <meta name="twitter:image" content="https://webwhiztech.com/img/logo.png" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://webwhiztech.com/#organization",
+            "name": "WebWhizTech",
+            "url": "https://webwhiztech.com/",
+            "logo": "https://webwhiztech.com/img/logo.png",
+            "email": "info@webwhiztech.com",
+            "telephone": "+923052030673",
+            "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://webwhiztech.com/#website",
+            "url": "https://webwhiztech.com/",
+            "name": "WebWhizTech",
+            "publisher": { "@id": "https://webwhiztech.com/#organization" }
+          },
+          {
+            "@type": "ContactPage",
+            "@id": "https://webwhiztech.com/contact.html#webpage",
+            "url": "https://webwhiztech.com/contact.html",
+            "name": "Contact | WebWhizTech",
+            "isPartOf": { "@id": "https://webwhiztech.com/#website" },
+            "about": { "@id": "https://webwhiztech.com/#organization" }
+          }
+        ]
+      }
+    </script>
 
     <!-- Favicon -->
     <link href="img/logo.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -35,10 +89,10 @@
     <div class="container-fluid nav-bar p-0">
       <div class="container-lg p-0">
         <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-          <a href="index.html" class="navbar-brand">
+          <a href="index.html" class="navbar-brand" data-animate="fade-right">
             <h1 class="m-0 text-white display-4">
               <span class="text-primary">W</span>eb
-              <span class="text-primary">W</span>hiz
+              <span class="text-primary">W</span>hiz<span class="text-primary">T</span>ech
             </h1>
           </a>
           <button
@@ -58,6 +112,7 @@
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
               <a href="pricing.html" class="nav-item nav-link">Pricing</a>
+              <a href="potfolio.html" class="nav-item nav-link">Portfolio</a>
 
               <a href="contact.html" class="nav-item nav-link active"
                 >Contact</a
@@ -72,6 +127,7 @@
     <!-- Page Header Start -->
     <div
       class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5"
+      data-animate="zoom"
     >
       <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Contact</h1>
       <div class="d-inline-flex text-white">
@@ -85,15 +141,15 @@
     <!-- Contact Start -->
     <div class="container-fluid py-5">
       <div class="container">
-        <div class="text-center">
+        <div class="text-center" data-animate="fade-up">
           <small
             class="bg-primary text-white text-uppercase font-weight-bold text-center px-1"
             >Get In Touch</small
           >
-          <h1 class="mt-2 mb-5">Contact For Any Queries</h1>
+          <h1 class="mt-2 mb-5">Let’s build something great</h1>
         </div>
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5" data-animate="fade-right">
             <div class="d-flex align-items-center border mb-3 p-4">
               <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
               <div class="d-flex flex-column">
@@ -105,18 +161,22 @@
               <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
               <div class="d-flex flex-column">
                 <h5 class="font-weight-bold">Email Us</h5>
-                <p class="m-0">mohsinkhanzda@gmail.com</p>
+                <p class="m-0">
+                  <a class="text-white" href="mailto:info@webwhiztech.com">info@webwhiztech.com</a>
+                </p>
               </div>
             </div>
             <div class="d-flex align-items-center border mb-3 mb-md-0 p-4">
               <i class="fas fa-2x fa-phone-alt text-primary mr-3"></i>
               <div class="d-flex flex-column">
                 <h5 class="font-weight-bold">Call Us</h5>
-                <p class="m-0">+92 3052030673</p>
+                <p class="m-0">
+                  <a class="text-white" href="https://wa.me/923052030673" target="_blank" rel="noopener">+92 3052030673</a>
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7" data-animate="fade-left">
             <div class="contact-form">
               <div id="success"></div>
               <form name="sentMessage" id="contactForm" novalidate="novalidate">
@@ -198,10 +258,10 @@
             <h1 class="m-0 mt-n2 text-white display-4">
               <span class="text-primary">W</span>eb<span class="text-primary">
                 W</span
-              >hiz
+              >hiz<span class="text-primary">T</span>ech
             </h1>
           </a>
-          <p>Trust Web Whiz to transform your ideas into digital success.</p>
+          <p>Trust WebWhizTech to transform your ideas into digital success.</p>
           <div class="d-flex justify-content-start mt-4">
             <a
               class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
@@ -252,22 +312,26 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
-          <h5 class="font-weight-bold text-primary mb-4">Get In Touch</h5>
-          <p>Just a click away!</p>
+          <h5 class="font-weight-bold text-primary mb-4">Let’s talk</h5>
+          <p>Tell us what you’re building—we’ll reply within 24 hours.</p>
           <p>
             <i class="fa fa-map-marker-alt text-primary mr-2"></i>Lahore,
             Pakistan
           </p>
-          <p><i class="fa fa-phone-alt text-primary mr-2"></i>+92 3052030673</p>
           <p>
-            <i class="fa fa-envelope text-primary mr-2"></i>mohsinkhanzda@gmail.com
+            <i class="fa fa-phone-alt text-primary mr-2"></i
+            ><a class="text-white" href="https://wa.me/923052030673" target="_blank" rel="noopener">+92 3052030673</a>
+          </p>
+          <p>
+            <i class="fa fa-envelope text-primary mr-2"></i
+            ><a class="text-white" href="mailto:info@webwhiztech.com">info@webwhiztech.com</a>
           </p>
         </div>
       </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5">
       <p class="m-0 text-center">
-        &copy; <a class="font-weight-semi-bold" href="#">Web Whiz</a>. All
+        &copy; <a class="font-weight-semi-bold" href="https://webwhiztech.com">WebWhizTech</a>. All
         Rights Reserved.
       </p>
     </div>
